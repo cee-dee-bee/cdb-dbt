@@ -1,2 +1,2 @@
-# cdb-dbt-quickstart
+# cdb-dbt
 Personal dbt repo
