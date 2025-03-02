@@ -6,4 +6,4 @@
     -- amount is stored in cents, convert to dollars
     ,amount/100 AS payment_amount
     ,created AS payment_created_date
-  FROM `cdb-learns-dbt.stripe.payment`
+  FROM {{ source('stripe', 'payment') }}
