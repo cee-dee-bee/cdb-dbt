@@ -3,14 +3,14 @@ version: 2
 models:
   - name: stg_jaffle_shop__customers
     description: Staged table of customers with one unique customer per row
-    columns: 
+    columns:
       - name: customer_id
-        description: The primary key for customers 
+        description: The primary key for customers
         tests:
           - unique
           - not_null
   - name: stg_jaffle_shop__orders
-    description: Stages table of orders with one order per row
+    description: Staged table of orders with one order per row
     columns:
       - name: order_id
         description: The primary key for orders
@@ -26,7 +26,7 @@ models:
                 - shipped
                 - returned
                 - return_pending
-                - placed 
+                - placed
       - name: customer_id
         description: The foreign key for customer_id in stg_jaffle_shop__customers
         tests:
